@@ -62,7 +62,6 @@ Restart zabbix agent (to read in the new userparameters)
 ### Assign the template to a host
 
 
-## TODO
+## Notes
 
-Update the template for all of the new items in the stats script.
-Adjust the template items for the correct storage format (e.g. delta).
+Generally, items are updated every 120 seconds if they are a counter, and 3600 seconds if they are a config parameter.  Also, items that are counters should all be stored as Delta (simple change).  This is a somewhat opinionated setup.
